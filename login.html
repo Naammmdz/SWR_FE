@@ -1,0 +1,89 @@
+<!-- Login Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - School Healthcare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #f9fafb; }
+  </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white w-full flex items-center justify-between px-16 py-4 shadow-none">
+        <div class="flex items-center gap-8">
+            <span class="text-2xl font-bold">School Health</span>
+            <ul class="flex items-center gap-8 text-gray-800 font-medium">
+                <li><a href="index.html" class="hover:text-black">Trang chủ</a></li>
+                <li class="relative group">
+                  <button type="button" class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none">
+                    Tài nguyên
+                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                  </button>
+                  <div class="absolute left-0 mt-2 w-[520px] bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-20 p-6">
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+                      <div>
+                        <div class="font-semibold text-gray-900">Hướng dẫn sức khỏe</div>
+                        <div class="text-gray-500 text-sm">Tài liệu giáo dục về sức khỏe học sinh</div>
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900">Sơ cứu</div>
+                        <div class="text-gray-500 text-sm">Thông tin sơ cứu cơ bản cho các tình huống thường gặp</div>
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900">Dinh dưỡng</div>
+                        <div class="text-gray-500 text-sm">Hướng dẫn ăn uống lành mạnh cho học sinh</div>
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900">Sức khỏe tâm thần</div>
+                        <div class="text-gray-500 text-sm">Tài nguyên hỗ trợ sức khỏe tinh thần học sinh</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="blog.html" class="hover:text-black">Blog</a></li>
+                <li><a href="#" class="hover:text-black">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-3">
+            <button class="border rounded-lg p-2 hover:bg-gray-100 transition-colors" aria-label="Toggle theme">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 5.66l-.71-.71M4.05 4.93l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            </button>
+            <button class="border rounded-lg px-4 py-2 font-medium hover:bg-gray-100 transition-colors"><a href="login.html">Đăng nhập</a></button>
+            <button class="bg-black text-white rounded-lg px-4 py-2 font-semibold hover:bg-gray-800 transition-colors">Đăng ký</button>
+        </div>
+    </nav>
+    <section class="flex min-h-[80vh] items-center justify-center">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="rounded-lg border bg-white text-gray-900 shadow-sm mx-auto max-w-sm">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="font-semibold tracking-tight text-2xl">Đăng nhập</div>
+            <div class="text-sm text-gray-500">Nhập email và mật khẩu để truy cập tài khoản của bạn</div>
+          </div>
+          <form>
+            <div class="p-6 pt-0 space-y-4">
+              <div class="space-y-2">
+                <label class="text-sm font-medium leading-none" for="email">Email</label>
+                <input type="email" class="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-base placeholder-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-700 focus-visible:ring-offset-2 md:text-sm" id="email" placeholder="nhap@email.com" required>
+              </div>
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <label class="text-sm font-medium leading-none" for="password">Mật khẩu</label>
+                  <a class="text-sm text-blue-700 underline-offset-4 hover:underline" href="/forgot-password">Quên mật khẩu?</a>
+                </div>
+                <input type="password" class="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-base placeholder-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-700 focus-visible:ring-offset-2 md:text-sm" id="password" required>
+              </div>
+            </div>
+            <div class="items-center p-6 pt-0 flex flex-col space-y-4">
+              <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-700 focus-visible:ring-offset-2 bg-blue-700 text-white hover:bg-blue-800 h-10 px-4 py-2 w-full" type="submit">Đăng nhập</button>
+              <div class="text-center text-sm">Chưa có tài khoản? <a class="text-blue-700 underline-offset-4 hover:underline" href="/register">Đăng ký</a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
+<!-- End Login Page -->

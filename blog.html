@@ -1,0 +1,323 @@
+<!-- Blog Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - School Healthcare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #f9fafb; }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar/Header -->
+  <nav class="bg-white w-full flex items-center justify-between px-16 py-4 shadow-none">
+    <div class="flex items-center gap-8">
+      <span class="text-2xl font-bold">School Health</span>
+      <ul class="flex items-center gap-8 text-gray-800 font-medium">
+        <li><a href="index.html" class="hover:text-black">Trang chủ</a></li>
+        <li class="relative group">
+          <a href="#" class="flex items-center hover:text-black">Tài nguyên
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <ul class="absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-10">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Tài nguyên 1</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Tài nguyên 2</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html" class="hover:text-black">Blog</a></li>
+        <li><a href="#" class="hover:text-black">Liên hệ</a></li>
+      </ul>
+    </div>
+    <div class="flex items-center gap-3">
+      <button class="border rounded-lg p-2 hover:bg-gray-100 transition-colors" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 5.66l-.71-.71M4.05 4.93l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+      </button>
+      <button class="border rounded-lg px-4 py-2 font-medium hover:bg-gray-100 transition-colors"><a href="login.html">Đăng nhập</a></button>
+      <button class="bg-black text-white rounded-lg px-4 py-2 font-semibold hover:bg-gray-800 transition-colors">Đăng ký</button>
+    </div>
+  </nav>
+  <!-- Main Blog Layout -->
+  <main class="container mx-auto py-8">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+      <!-- Main Blog Content -->
+      <div class="w-full md:w-3/4">
+        <h1 class="text-3xl font-bold mb-2">Blog Sức Khỏe Học Đường</h1>
+        <p class="text-gray-600 mb-6">Chia sẻ kiến thức và lời khuyên thực tiễn về sức khỏe và hạnh phúc cho học sinh</p>
+        <!-- Blog Nổi Bật -->
+        <div class="mb-8">
+          <div class="rounded-lg overflow-hidden shadow bg-white">
+            <div class="h-64 bg-gray-200 relative flex items-end">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Dị ứng theo mùa" class="absolute inset-0 w-full h-full object-cover"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                <div class="p-6 text-white">
+                  <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-black text-white mb-2">Nổi bật</div>
+                  <h2 class="text-2xl font-bold mb-2">Dị Ứng Theo Mùa: Hỗ Trợ Học Sinh Vượt Qua</h2>
+                  <p class="mb-2">Tìm hiểu cách nhận biết triệu chứng dị ứng và hỗ trợ học sinh bị ảnh hưởng trong lớp học.</p>
+                  <div class="flex items-center text-sm mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user h-4 w-4 mr-1"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span class="mr-3">BS. Sarah Johnson</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4 mr-1"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                    <span class="mr-3">15/05/2023</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4 mr-1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span>5 phút đọc</span>
+                  </div>
+                  <div class="flex flex-wrap gap-2 mb-2">
+                    <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs bg-white/20">dị ứng</span>
+                    <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs bg-white/20">mùa xuân</span>
+                    <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs bg-white/20">quản lý lớp học</span>
+                  </div>
+                  <a class="text-blue-200 font-medium hover:underline" href="#">Đọc bài viết →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tabs Filter -->
+        <div class="mb-8">
+          <div class="h-10 items-center rounded-md bg-gray-100 p-1 w-full overflow-x-auto flex flex-nowrap justify-start">
+            <button class="inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium bg-white text-gray-900 shadow-sm mr-2">Tất cả</button>
+            <button class="inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-200 mr-2">Mẹo sức khỏe</button>
+            <button class="inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-200 mr-2">Sống khỏe</button>
+            <button class="inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-200 mr-2">Dinh dưỡng</button>
+            <button class="inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-200 mr-2">Sức khỏe tâm thần</button>
+            <button class="inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-200 mr-2">Sức khỏe thể chất</button>
+            <button class="inline-flex items-center justify-center rounded-sm px-3 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-200">Giáo dục hòa nhập</button>
+          </div>
+        </div>
+        <!-- Blog Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Blog Card 1 -->
+          <div class="rounded-lg border bg-white shadow-sm flex flex-col">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <div class="text-2xl font-semibold leading-none tracking-tight"><a class="hover:text-blue-600 transition-colors" href="#">Dị Ứng Theo Mùa: Hỗ Trợ Học Sinh Vượt Qua</a></div>
+              <div class="text-sm text-gray-500">Tìm hiểu cách nhận biết triệu chứng dị ứng và hỗ trợ học sinh bị ảnh hưởng trong lớp học.</div>
+            </div>
+            <div class="p-6 pt-0 flex-grow">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">dị ứng</div>
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">mùa xuân</div>
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">quản lý lớp học</div>
+              </div>
+            </div>
+            <div class="p-6 flex justify-between items-center text-sm text-gray-500 border-t pt-4">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user h-4 w-4 mr-1"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>BS. Sarah Johnson</span>
+              </div>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4 mr-1"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                <span>15/05/2023</span>
+              </div>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4 mr-1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>5 phút đọc</span>
+              </div>
+            </div>
+          </div>
+          <!-- Blog Card 2 -->
+          <div class="rounded-lg border bg-white shadow-sm flex flex-col">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <div class="text-2xl font-semibold leading-none tracking-tight"><a class="hover:text-blue-600 transition-colors" href="#">Thúc Đẩy Thói Quen Ngủ Lành Mạnh Cho Trẻ</a></div>
+              <div class="text-sm text-gray-500">Khám phá tầm quan trọng của giấc ngủ đối với thành tích học tập và cách giúp học sinh ngủ ngon hơn.</div>
+            </div>
+            <div class="p-6 pt-0 flex-grow">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">giấc ngủ</div>
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">sức khỏe</div>
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">thành tích học tập</div>
+              </div>
+            </div>
+            <div class="p-6 flex justify-between items-center text-sm text-gray-500 border-t pt-4">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user h-4 w-4 mr-1"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>Nguyễn Minh Châu</span>
+              </div>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4 mr-1"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                <span>28/04/2023</span>
+              </div>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4 mr-1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>4 phút đọc</span>
+              </div>
+            </div>
+          </div>
+          <!-- Blog Card 3 -->
+          <div class="rounded-lg border bg-white shadow-sm flex flex-col">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <div class="text-2xl font-semibold leading-none tracking-tight"><a class="hover:text-blue-600 transition-colors" href="#">Dinh Dưỡng Cho Thành Công Học Tập</a></div>
+              <div class="text-sm text-gray-500">Chế độ dinh dưỡng hợp lý giúp tăng khả năng tập trung, ghi nhớ và kết quả học tập.</div>
+            </div>
+            <div class="p-6 pt-0 flex-grow">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">dinh dưỡng</div>
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">sức khỏe não bộ</div>
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">tập trung</div>
+              </div>
+            </div>
+            <div class="p-6 flex justify-between items-center text-sm text-gray-500 border-t pt-4">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user h-4 w-4 mr-1"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>Trần Thị Mai</span>
+              </div>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4 mr-1"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                <span>10/04/2023</span>
+              </div>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4 mr-1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>6 phút đọc</span>
+              </div>
+            </div>
+          </div>
+          <!-- Blog Card 4 -->
+          <div class="rounded-lg border bg-white shadow-sm flex flex-col">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <div class="text-2xl font-semibold leading-none tracking-tight"><a class="hover:text-blue-600 transition-colors" href="#">Quản Lý Lo Âu Trong Lớp Học</a></div>
+              <div class="text-sm text-gray-500">Chiến lược thực tiễn giúp giáo viên hỗ trợ học sinh vượt qua lo âu và căng thẳng.</div>
+            </div>
+            <div class="p-6 pt-0 flex-grow">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">lo âu</div>
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">quản lý căng thẳng</div>
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">hỗ trợ cảm xúc</div>
+              </div>
+            </div>
+            <div class="p-6 flex justify-between items-center text-sm text-gray-500 border-t pt-4">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user h-4 w-4 mr-1"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>BS. Lê Văn Hùng</span>
+              </div>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4 mr-1"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                <span>22/03/2023</span>
+              </div>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4 mr-1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>7 phút đọc</span>
+              </div>
+            </div>
+          </div>
+          <!-- Blog Card 5 -->
+          <div class="rounded-lg border bg-white shadow-sm flex flex-col">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <div class="text-2xl font-semibold leading-none tracking-tight"><a class="hover:text-blue-600 transition-colors" href="#">Tầm Quan Trọng Của Vận Động Đối Với Việc Học</a></div>
+              <div class="text-sm text-gray-500">Nghiên cứu cho thấy vận động thường xuyên giúp phát triển trí não và nâng cao kết quả học tập.</div>
+            </div>
+            <div class="p-6 pt-0 flex-grow">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">vận động</div>
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">phát triển não bộ</div>
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">tập trung</div>
+              </div>
+            </div>
+            <div class="p-6 flex justify-between items-center text-sm text-gray-500 border-t pt-4">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user h-4 w-4 mr-1"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>HLV. Phạm Quốc Toàn</span>
+              </div>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4 mr-1"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                <span>05/03/2023</span>
+              </div>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4 mr-1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>6 phút đọc</span>
+              </div>
+            </div>
+          </div>
+          <!-- Blog Card 6 -->
+          <div class="rounded-lg border bg-white shadow-sm flex flex-col">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <div class="text-2xl font-semibold leading-none tracking-tight"><a class="hover:text-blue-600 transition-colors" href="#">Hỗ Trợ Học Sinh Có Bệnh Mãn Tính</a></div>
+              <div class="text-sm text-gray-500">Giải pháp xây dựng môi trường học tập hòa nhập cho học sinh có nhu cầu sức khỏe đặc biệt.</div>
+            </div>
+            <div class="p-6 pt-0 flex-grow">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">bệnh mãn tính</div>
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">hỗ trợ</div>
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">hòa nhập</div>
+              </div>
+            </div>
+            <div class="p-6 flex justify-between items-center text-sm text-gray-500 border-t pt-4">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user h-4 w-4 mr-1"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>Ngô Thị Hạnh</span>
+              </div>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4 mr-1"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                <span>18/02/2023</span>
+              </div>
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4 mr-1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>8 phút đọc</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div class="w-full md:w-1/4 space-y-6">
+        <!-- Search -->
+        <div class="rounded-lg border bg-white shadow-sm">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="text-2xl font-semibold leading-none tracking-tight">Tìm kiếm</div>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="relative">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute left-2.5 top-2.5 h-4 w-4 text-gray-500"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+              <input type="search" class="flex h-10 w-full rounded-md border bg-white px-3 py-2 text-base pl-8" placeholder="Tìm bài viết...">
+            </div>
+          </div>
+        </div>
+        <!-- Categories -->
+        <div class="rounded-lg border bg-white shadow-sm">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="text-2xl font-semibold leading-none tracking-tight">Chuyên mục</div>
+          </div>
+          <div class="p-6 pt-0">
+            <ul class="space-y-2">
+              <li><a class="flex justify-between items-center text-gray-700 hover:text-blue-600" href="#"><span>Mẹo sức khỏe</span><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">1</div></a></li>
+              <li><a class="flex justify-between items-center text-gray-700 hover:text-blue-600" href="#"><span>Sống khỏe</span><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">1</div></a></li>
+              <li><a class="flex justify-between items-center text-gray-700 hover:text-blue-600" href="#"><span>Dinh dưỡng</span><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">1</div></a></li>
+              <li><a class="flex justify-between items-center text-gray-700 hover:text-blue-600" href="#"><span>Sức khỏe tâm thần</span><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">1</div></a></li>
+              <li><a class="flex justify-between items-center text-gray-700 hover:text-blue-600" href="#"><span>Sức khỏe thể chất</span><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">1</div></a></li>
+              <li><a class="flex justify-between items-center text-gray-700 hover:text-blue-600" href="#"><span>Giáo dục hòa nhập</span><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">1</div></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Popular Tags -->
+        <div class="rounded-lg border bg-white shadow-sm">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="text-2xl font-semibold leading-none tracking-tight">Từ khóa nổi bật</div>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="flex flex-wrap gap-2">
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">dị ứng</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">mùa xuân</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">quản lý lớp học</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">giấc ngủ</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">sức khỏe</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">thành tích học tập</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">dinh dưỡng</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">sức khỏe não bộ</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">tập trung</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">lo âu</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">quản lý căng thẳng</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">hỗ trợ cảm xúc</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">vận động</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">phát triển não bộ</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">bệnh mãn tính</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">hỗ trợ</div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold text-xs">hòa nhập</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+<!-- End Blog Page -->
